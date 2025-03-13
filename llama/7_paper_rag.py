@@ -58,11 +58,6 @@ prompt = ChatPromptTemplate.from_messages(
 create_doc_chain = create_stuff_documents_chain(model, prompt)
 
 
-
-# resp = chain2.invoke({'input': "Please briefly introduce Spiking Self-Attention (SSA) in 100 words?"})
-#
-# print(resp['answer'])
-
 contextualize_q_system_prompt = """Given a chat history and the latest user question 
 which might reference context in the chat history, 
 formulate a standalone question which can be understood 
